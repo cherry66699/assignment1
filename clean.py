@@ -22,4 +22,9 @@ merged_df = merged_df[~merged_df['job'].str.contains('insurance|Insurance')]
 # Step 4: Save the cleaned data to the output file
 merged_df.to_csv(output, index=False)
 
+# Print the shape of the output file
+print("Shape of the output file:", merged_df.shape)
+
+if __name__ == "__main__":
+    print("Data merging and redundancy removal completed.")
 
